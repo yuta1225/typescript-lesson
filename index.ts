@@ -1,1 +1,1 @@
-class Car {}
+const hello:string = 'hello';
