@@ -1,19 +1,20 @@
-var hasValue = true;
-var count = 10;
-var float = 3.14;
-var negative = -0.12;
-var single = 'hello';
-var double = "hello";
-var back = "hello";
-var person = {
+"use strict";
+let hasValue = true;
+let count = 11;
+let float = 30;
+let negative = -0.12;
+let single = 'hello';
+let double = "hello";
+let back = `hello`;
+const person = {
     name: {
         first: 'Jack',
         second: 'Smith'
     },
     age: 21
 };
-var fruits = ['Apple', 'Banana', 'Grape', 1];
-var book = ['business', 1500, false];
+const fruits = ['Apple', 'Banana', 'Grape', 1];
+const book = ['business', 1500, false];
 book[1] = 700;
 book.push(21);
 // console.log(book[3]);
@@ -24,23 +25,23 @@ var CoffeeSize;
     CoffeeSize["GRANDE"] = "GRANDE";
     CoffeeSize["VENTI"] = "VENTI";
 })(CoffeeSize || (CoffeeSize = {}));
-var Coffee = {
+const Coffee = {
     hot: true,
     size: CoffeeSize.TALL
 };
-var anything = true;
+let anything = true;
 anything = 'hello';
 anything = {};
 anything.al = 'al';
-var banana = 'banana';
+let banana = 'banana';
 banana = anything;
-var unionType = 10;
-var unionTypes = [21, 'hello'];
+let unionType = 10;
+let unionTypes = [21, 'hello'];
 // リテラル型
-var apple = 'apple';
-var mango = 0;
-var clothSize = 'large';
-var cloth = {
+const apple = 'apple';
+const mango = 0;
+let clothSize = 'large';
+const cloth = {
     color: 'white',
     size: clothSize
 };
@@ -53,20 +54,21 @@ function sayHello() {
 function sayGood() {
     return;
 }
-var anotherAdd = add;
-var doubleNUmber = function (number) { return number * 2; };
-var doubllNumber = function (number) { return number * 2; };
+const anotherAdd = add;
+const doubleNUmber = (number) => number * 2;
+const doubllNumber = number => number * 2;
 function doubleAndHandle(num, callback) {
-    var doubleNum = callback(num * 2);
+    const doubleNum = callback(num * 2);
     console.log(num * 2);
 }
-doubleAndHandle(21, function (doubleNum) {
+doubleAndHandle(21, doubleNum => {
     return doubleNum;
 });
 // unkown型
-var unknownInput;
-var anyInput;
-var text;
+const Cons = 1;
+let unknownInput;
+let anyInput;
+let text;
 unknownInput = 'hello';
 unknownInput = 21;
 if (typeof unknownInput === 'string') {
@@ -75,5 +77,7 @@ if (typeof unknownInput === 'string') {
 // never型
 function error(message) {
     throw new Error(message);
+    while (true) {
+    }
 }
-console.log(error('This is an error'));
+console.log(error('This is an error !'));

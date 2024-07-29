@@ -1,6 +1,6 @@
 let hasValue: boolean = true;
-let count: number = 10;
-let float: number = 3.14;
+let count: number = 11;
+let float: number = 30;
 let negative: number = -0.12;
 let single: string = 'hello';
 let double: string = "hello";
@@ -77,6 +77,7 @@ doubleAndHandle(21, doubleNum => {
 });
 
 // unkown型
+const Cons: number = 1;
 let unknownInput: unknown;
 let anyInput: NavigationTimingType;
 let text: string;
@@ -90,9 +91,7 @@ if (typeof unknownInput === 'string') {
 function error(message: string): never {
     throw new Error(message);
     while(true){
-        
+
     }
 }
-console.log(error('This is an error'));
-
-
+console.log(error('This is an error !'));
