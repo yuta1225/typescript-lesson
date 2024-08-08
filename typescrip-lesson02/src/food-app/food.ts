@@ -1,4 +1,4 @@
-class Food implements Foodable {
+export class Food implements Foodable {
     constructor(public element: HTMLDivElement) {
       element.addEventListener('click', this.clickEventHandler.bind(this));
     }

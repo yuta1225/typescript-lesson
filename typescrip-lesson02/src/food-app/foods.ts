@@ -1,4 +1,4 @@
-class Foods implements Foodsable {
+export class Foods implements Foodsable {
     private static instance: Foods;
     elements = document.querySelectorAll<HTMLDivElement>('.food');
     private _activeElements: HTMLDivElement[] = [];
